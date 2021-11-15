@@ -1,0 +1,63 @@
+@font-face
+{
+    font-family:'YJ';
+    src: url('../fonts/webyekan/Yekan.eot?#') format('eot'),  /* IE6–8 */
+    url('../fonts/webyekan/Yekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/webyekan/Yekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+/*WebYekanNumberFont*/
+@font-face
+{
+    font-family:'NYJ';
+    src: url('../fonts/webyekan/yekannumbers-regular.eot?#') format('eot'),  /* IE6–8 */
+    url('../fonts/webyekan/yekannumbers-regular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/webyekan/yekannumbers-regular.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+
+
+
+.League-matches-teams-container{
+    font-family: yj,nyj;
+    margin-left: 3rem;
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+    border:solid #001f3f 1px;
+    border-radius: 20px;
+    margin-top: 7%;
+    padding: 10px;
+}
+
+.fixture-option,.league-option{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.league-option,.fixture-option{
+    margin-bottom: .6rem;
+}
+.league-option{
+    margin-top: 10px;
+}
+
+.Matches{
+    width:auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1rem;
+}
+.Matches div{
+    border-top:solid #7d7d7d 1px;
+    border-left: solid #7d7d7d 1px;
+    border-right: solid #7d7d7d 1px;
+    padding: 4px;
+    text-align: center;
+}
+.Matches div:last-child{
+    border-bottom: solid #7d7d7d 1px;
+}

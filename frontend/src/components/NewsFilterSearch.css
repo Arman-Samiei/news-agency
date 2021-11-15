@@ -1,0 +1,18 @@
+@import "App.css";
+.filtered-news-item , .filtered-videos-item , .searched-news-item {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: yj,nyj;
+}
+.filtered-news-item img, .filtered-videos-item img, .searched-news-item img{
+    width:200px;
+    height:150px;
+    margin:1rem;
+}
+.filtered-news-item h5, .filtered-news-item h5, .searched-news-item h5{
+    display: inline;
+    text-align: right;
+    direction: rtl;
+}

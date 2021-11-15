@@ -1,0 +1,370 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('../fonts/Vazir/Vazir.eot');
+  src: url('../fonts/Vazir/Vazir.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Vazir/Vazir.woff2') format('woff2'),
+  url('../fonts/Vazir/Vazir.woff') format('woff'),
+  url('../fonts/Vazir/Vazir.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url('../fonts/Vazir/Vazir-Bold.eot');
+  src: url('../fonts/Vazir/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Vazir/Vazir-Bold.woff2') format('woff2'),
+  url('../fonts/Vazir/Vazir-Bold.woff') format('woff'),
+  url('../fonts/Vazir/Vazir-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url('../fonts/Vazir/Vazir-Black.eot');
+  src: url('../fonts/Vazir/Vazir-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Vazir/Vazir-Black.woff2') format('woff2'),
+  url('../fonts/Vazir/Vazir-Black.woff') format('woff'),
+  url('../fonts/Vazir/Vazir-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url('../fonts/Vazir/Vazir-Medium.eot');
+  src: url('../fonts/Vazir/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Vazir/Vazir-Medium.woff2') format('woff2'),
+  url('../fonts/Vazir/Vazir-Medium.woff') format('woff'),
+  url('../fonts/Vazir/Vazir-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url('../fonts/Vazir/Vazir-Light.eot');
+  src: url('../fonts/Vazir/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Vazir/Vazir-Light.woff2') format('woff2'),
+  url('../fonts/Vazir/Vazir-Light.woff') format('woff'),
+  url('../fonts/Vazir/Vazir-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url('../fonts/Vazir/Vazir-Thin.eot');
+  src: url('../fonts/Vazir/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Vazir/Vazir-Thin.woff2') format('woff2'),
+  url('../fonts/Vazir/Vazir-Thin.woff') format('woff'),
+  url('../fonts/Vazir/Vazir-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face
+{
+  font-family:'YJ';
+  src: url('../fonts/webyekan/Yekan.eot?#') format('eot'),  /* IE6–8 */
+  url('../fonts/webyekan/Yekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/webyekan/Yekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+/*WebYekanNumberFont*/
+@font-face
+{
+  font-family:'NYJ';
+  src: url('../fonts/webyekan/yekannumbers-regular.eot?#') format('eot'),  /* IE6–8 */
+  url('../fonts/webyekan/yekannumbers-regular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/webyekan/yekannumbers-regular.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+
+body{
+  font-family: Vazir;
+  font-size: 1rem;
+  --border-radius: 20px;
+}
+a{
+  text-decoration: none;
+  color: black;
+  padding: .2%;
+}
+
+#header{
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: aqua;
+  font-size: 1rem;
+  /*margin-right: 1rem;*/
+  /*margin-left: 1rem;*/
+  border-top-right-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+}
+
+#header>div:first-child{
+  width:8%;
+}
+#header div:first-child img{
+  width:100%;
+  height:auto;
+}
+
+#header div{
+  height:100%;
+  width:20%;
+}
+#header div.livescore{
+  margin-left: 20px;
+}
+#searchbar{--searchbar-img-width:10%}
+#searchbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+#searchbar input[type="image"]{
+  width:var(--searchbar-img-width);
+  height:30%;
+
+}
+#searchbar input[type="text"]{
+  border:solid darkgrey 1px;
+  width:calc(100% - var(--searchbar-img-width))
+}
+
+
+
+
+
+
+
+
+
+
+
+.hottest{
+  width: 60%;
+  padding: .5rem 1rem .5rem 1rem;
+  float: right;
+  margin-top:-50px;
+}
+.hottest>*{
+  width: 100%;
+}
+ul.breadcrumb {
+  padding: 10px 0 10px 16px;
+  list-style: none;
+  direction: rtl;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+
+  direction: rtl;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #2979ff;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #64b5f6;
+}
+
+
+.hottest-gallery{
+  margin-bottom: 9rem;
+}
+.hottest-gallery-main-img{
+  position: relative;
+  width:100%;
+  height: 500px;
+}
+.hottest-gallery-main-img img{
+  width:100%;
+  height:100%;
+
+}
+.hottest-gallery-main-img p, .thumbnail p{
+  position: absolute;
+  color:white;
+  bottom:0;
+  z-index: 1;
+  font-size: .9rem;
+  width:100%;
+  text-align: right;
+  padding: 5px;
+
+}
+.hottest-gallery-buttons{
+  position: absolute;
+  width:100%;
+  bottom: -24px;
+  direction: ltr;
+  background-image: linear-gradient(transparent,#000);
+  padding: 1rem;
+}
+
+.hottest-gallery-buttons>div{
+  background-color: rgb(255,255,255);
+  width:8.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: .6rem 0;
+}
+.hottest-gallery-buttons>div>div{
+  width:50%;
+  padding: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.hottest-gallery-buttons div img{
+  width: .6rem;
+  height: .8rem;
+}
+.hottest-gallery-buttons>div>div:first-child{
+  border-right: solid 1px #e1e1e1;
+}
+.hottest-gallery-thumbnails-container{
+  margin-top: 2rem;
+  width:100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.thumbnail,.thumbnail>div:first-of-type{
+  position: relative;
+  border-radius: 8px;
+  width:9.2rem;
+  height:7rem;
+}
+.thumbnail{
+  line-height: normal;
+  font-size: .8rem;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.thumbnail img{
+  border-radius: 8px;
+  width:100%;
+  height: 100%;
+}
+.thumbnail>div:first-of-type{
+  position: absolute;
+  top:0;
+  background-color: rgba(0,0,0,0.7);
+  opacity: 0;
+}
+
+.thumbnail-middle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255,255,255,0);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .2s ease;
+}
+.thumbnail-text>*{
+  display: block;
+}
+.thumbnail:hover .thumbnail-middle {
+  height: 100%;
+}
+
+.thumbnail-middle>div {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.thumbnail:hover>div:first-of-type{
+  transition: .2s ease;
+  opacity: 1;
+}
+.thumbnail{
+  position: relative;
+}
+.news-titles-container{
+  float: right;
+  background-color: #cacaca;
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  height: 500px;
+  overflow: scroll;
+  text-align: right;
+  direction: rtl;
+}
+.news-titles{
+  display: block;
+  text-align: right;
+}
+.favorite-team-news{
+  border-radius: var(--border-radius);
+  background-color: #01ff70;
+  margin-bottom: 20px;
+  padding: 10px;
+}

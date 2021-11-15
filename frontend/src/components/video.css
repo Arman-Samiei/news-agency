@@ -1,0 +1,10 @@
+.video-container{
+    width:100%;
+    margin-top: 7%;
+}
+.video{
+    margin-left: 25%;
+    width:50%;
+
+}
+.video-container p{text-align: center}

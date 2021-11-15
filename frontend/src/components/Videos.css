@@ -1,0 +1,13 @@
+.videos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 40px;
+}
+.videos img{
+    width: 350px;
+    height: 225px;
+}
+.videos p{
+    text-align: center;
+    width:100%;
+}

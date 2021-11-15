@@ -1,0 +1,63 @@
+@font-face
+{
+    font-family:'YJ';
+    src: url('../fonts/webyekan/Yekan.eot?#') format('eot'),  /* IE6–8 */
+    url('../fonts/webyekan/Yekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/webyekan/Yekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+/*WebYekanNumberFont*/
+@font-face
+{
+    font-family:'NYJ';
+    src: url('../fonts/webyekan/yekannumbers-regular.eot?#') format('eot'),  /* IE6–8 */
+    url('../fonts/webyekan/yekannumbers-regular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/webyekan/yekannumbers-regular.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+.livescore-container{
+    font-family: yj,nyj;
+}
+.livescore-container *{
+    text-align: right;
+}
+.livescore-container>*{
+    margin-right: 1rem;
+}
+.livescore-container button{
+    padding: 1rem;
+    border: solid;
+}
+.livescore-container>button:nth-child(2){
+    margin-right: 0;
+    border-right: none;
+}
+.livescore-container>div{
+    clear: both;
+    display: flex;
+    flex-direction: row-reverse;
+    border-top: none;
+    /*border: solid;*/
+}
+
+
+.livescore-container>div:nth-of-type(even){
+    background-color: #f0f0f0;
+}
+.livescore-container>div.league{
+    /*border-top: solid;*/
+    padding: 1rem;
+    background-color: #41879e !important;
+}
+.livescore-container span{
+    padding: 1rem;
+}
+
+
+button{
+    float: right;
+}
+
+.livescore-container span:nth-child(3),span:nth-child(4),span:nth-child(5),span:nth-child(6),span:nth-child(7){
+    padding-left: 0;
+}
+

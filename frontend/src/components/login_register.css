@@ -1,0 +1,44 @@
+form.login-register-form input, a{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+form.login-register-form input{
+    margin-top: 1rem;
+    width:400px;
+    height:3rem;
+}
+form.login-register-form input[type="submit"]{
+    width:200px;
+    background-color: #2e6da4;
+}
+form.login-register-form input[type="submit"]:hover{
+    background-color: #1A01CC;
+}
+form.login-register-form ~ a:hover{
+    text-decoration: none;
+}
+form.login-register-form ~ a{
+    width:200px;
+    direction: rtl;
+}
+div.failure,div.success{
+    height:26vh;
+    width:60vh;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 10vh;
+    margin: 1rem auto;
+}
+div.success{
+    background-color: #01ff70;
+}
+div.failure{
+    background-color: #fae8e6;
+}
+.entering-code{
+    margin-top: 30px;
+    text-align: center;
+}
